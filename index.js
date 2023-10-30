@@ -22,7 +22,7 @@ function writeToFile(fileName, answers) {
     }
     else {
         shapeChoice = new Circle();
-        svgString += `<circle cx="50" cy="50" r="40" fill="${answers.ShapeBackgroundColor}"/>`;
+        svgString += `<circle cx="150" cy="115" r="80" fill="${answers.ShapeBackgroundColor}"/>`;
     }
 
     svgString += `<text x="150" y="130" text-anchor="middle" font-size="40" fill="${answers.textColor}">${answers.text}</text>`;
