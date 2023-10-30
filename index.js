@@ -30,7 +30,7 @@ function writeToFile(fileName, answers) {
     svgString += "</svg>";
 
     fs.writeFile(fileName, svgString, (err) => {
-        err ? console.log(err) : console.log("Generated .svg file");
+        err ? console.log(err) : console.log("Generated logo.svg");
     });
 
 }
@@ -59,7 +59,7 @@ function promptUser() {
         },
         {
             type: "input",
-            message: "What color will the shape of your logo be?",
+            message: "What color will the shape of your logo be? Type the color or hexadecimal number.",
             name: "shapeBackgroundColor",
         },
     ])
